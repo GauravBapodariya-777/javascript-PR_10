@@ -9,10 +9,10 @@ const viewData = () => {
         const { userid, email } = v;
         tbl += `
                         <tr class="tr">
-                            <td>${email}</td>
-                            <td>
-                                <button onclick="deleteData(${userid})">D</button>
-                                <button onclick="editData(${userid})">E</button>
+                            <td class="td">${email}</td>
+                            <td class="td d-flex">
+                                <button onclick="deleteData(${userid})" class="r-btn">D</button>
+                                <button onclick="editData(${userid})" class="r-btn">E</button>
                             </td>
                         </tr>
         `
