@@ -8,11 +8,11 @@ const viewData = () => {
     val.map((v) => {
         const { userid, email } = v;
         tbl += `
-                        <tr>
+                        <tr class="tr">
                             <td>${email}</td>
                             <td>
-                                <button onclick="deleteData(${userid})">Delete</button>
-                                <button onclick="editData(${userid})">Edit</button>
+                                <button onclick="deleteData(${userid})">D</button>
+                                <button onclick="editData(${userid})">E</button>
                             </td>
                         </tr>
         `
